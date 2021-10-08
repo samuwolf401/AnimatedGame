@@ -28,7 +28,7 @@ namespace AnimatedGame
         int bulletSpeed = 18;
         int playerSize = 40;
         int playerSpeed = 8;
-        Boolean playercontrol = false;
+        Boolean playerControl = false;
         Boolean gameOn = false;
 
 
@@ -135,7 +135,7 @@ namespace AnimatedGame
 
 
                 //checking if the countdown is over
-                if (playercontrol)
+                if (playerControl)
                 {
                     #region Player Logic
                     //move player 1
@@ -322,7 +322,7 @@ namespace AnimatedGame
                 if (timer == 0)
                 {
                     //Starting the game
-                    playercontrol = true;
+                    playerControl = true;
                     countdownLabel.Text = "";
                 }
                 #region bullets and removing offscreemn players
@@ -378,7 +378,7 @@ namespace AnimatedGame
             playerTwo.y = this.Height - playerSize*2;
             countdownLabel.Text = "3";
             timer = 3;
-            playercontrol = false;
+            playerControl = false;
 
             //checking who scored
             if (_player == "PlayerTwo")

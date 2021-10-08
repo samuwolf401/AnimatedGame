@@ -68,12 +68,11 @@ namespace AnimatedGame
             this.playerTwoScoreLabel.AutoSize = true;
             this.playerTwoScoreLabel.BackColor = System.Drawing.Color.Transparent;
             this.playerTwoScoreLabel.Font = new System.Drawing.Font("Impact", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playerTwoScoreLabel.Location = new System.Drawing.Point(3, 616);
+            this.playerTwoScoreLabel.Location = new System.Drawing.Point(0, 657);
             this.playerTwoScoreLabel.Name = "playerTwoScoreLabel";
             this.playerTwoScoreLabel.Size = new System.Drawing.Size(59, 43);
             this.playerTwoScoreLabel.TabIndex = 2;
             this.playerTwoScoreLabel.Text = "00";
-            this.playerTwoScoreLabel.Click += new System.EventHandler(this.playerTwoScoreLabel_Click);
             // 
             // TwoPlayerScreen
             // 
@@ -86,6 +85,7 @@ namespace AnimatedGame
             this.DoubleBuffered = true;
             this.Name = "TwoPlayerScreen";
             this.Size = new System.Drawing.Size(1000, 700);
+            this.Load += new System.EventHandler(this.TwoPlayerScreen_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.TwoPlayerScreen_Paint);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TwoPlayerScreen_KeyUp);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.TwoPlayerScreen_PreviewKeyDown);

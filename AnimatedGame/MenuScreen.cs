@@ -20,15 +20,7 @@ namespace AnimatedGame
         {
             Application.Exit();
             Form f = this.FindForm();
-
-            TwoPlayerScreen tps = new TwoPlayerScreen();
-
-
-
-            f.Controls.Add(tps);
-
-            f.Controls.Remove(this);
-            outputLabel.BackColor = Color.White;
+            
         }
 
         private void MenuScreen_Load(object sender, EventArgs e)
@@ -40,9 +32,11 @@ namespace AnimatedGame
         private void twoPlayer_Click_1(object sender, EventArgs e)
         {
             Form f = this.FindForm();
+            
             TwoPlayerScreen tps = new TwoPlayerScreen();
             f.Controls.Add(tps);
             f.Controls.Remove(this);
+
         }
 
         private void infobutton_Click_1(object sender, EventArgs e)
